@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bluzen — Pure Water. Always.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="home">
+      <div class="header-inner">
+        <a class="brand" href="#home" aria-label="Bluzen home">
+          <img
+            class="brand__mark"
+            src="Logo%20preview%20DARK%20NEW.%201jpg%20copy.jpg"
+            alt=""
+            width="48"
+            height="48"
+            decoding="async"
+          />
+          <span class="brand__text">
+            <span class="brand__name">BLUZEN</span>
+            <span class="brand__tagline">Pure water, always.</span>
+          </span>
+        </a>
+
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open menu"
+        >
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+
+        <nav class="nav" id="site-nav" aria-label="Primary">
+          <ul class="nav__list">
+            <li><a class="nav__link nav__link--active" href="#home">Home</a></li>
+            <li><a class="nav__link" href="#products">Products</a></li>
+            <li><a class="nav__link" href="#how-it-works">How It Works</a></li>
+            <li><a class="nav__link" href="#about">About Us</a></li>
+            <li><a class="nav__link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <a
+          class="btn btn--wa btn--header"
+          href="#"
+          data-wa-default
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg class="btn__wa-icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path
+              fill="currentColor"
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+            />
+          </svg>
+          <span class="btn__label btn__label--header">Book Installation<br />on WhatsApp</span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero__bg" aria-hidden="true">
+          <img
+            class="hero__bg-img"
+            src="elevate%20mockup.png"
+            alt=""
+            width="1536"
+            height="1024"
+            decoding="async"
+            fetchpriority="high"
+          />
+        </div>
+
+        <div class="hero__content">
+          <div class="hero__column hero__column--copy">
+            <h1 id="hero-heading" class="hero__title">
+              <span class="hero__title-line">You Don’t Know</span>
+              <span class="hero__title-line">
+                What’s In <span class="hero__title-accent">Your Water.</span>
+              </span>
+            </h1>
+            <p class="hero__lead">
+             It may look clean, but harmful contaminants can still be present.
+            </p>
+            <p class="hero__sub">
+              <span class="brand-name">Bluzen</span> gives your family pure, safe drinking water — with guaranteed service support.
+            </p>
+            <a
+              class="btn btn--wa btn--hero"
+              href="#"
+              data-wa-default
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="btn__wa-icon" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  fill="currentColor"
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                />
+              </svg>
+              <span class="btn__label">Book Installation on WhatsApp</span>
+            </a>
+
+            <div class="trust-row-wrap">
+              <ul class="trust-row" aria-label="Key benefits">
+                <li class="trust-row__item">
+                  <svg class="trust-row__icon" width="44" height="44" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.35"
+                      stroke-linejoin="round"
+                      d="M12 3.2c-3.2 3.4-6 6.1-6 10a6 6 0 0012 0c0-3.9-2.8-6.6-6-10z"
+                    />
+                  </svg>
+                  <span class="trust-row__text">Water tested<br />at your home</span>
+                </li>
+                <li class="trust-row__item">
+                  <svg class="trust-row__icon" width="44" height="44" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.35"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8 18h8M9 18v-5.5M15 18v-5.5M9 12.5V11c0-1.7 1.3-3 3-3s3 1.3 3 3v1.5"
+                    />
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.35"
+                      stroke-linecap="round"
+                      d="M8.5 10.5h7c.3 0 .5.2.5.5v1h-8v-1c0-.3.2-.5.5-.5z"
+                    />
+                  </svg>
+                  <span class="trust-row__text">Installed by<br />trained experts</span>
+                </li>
+                <li class="trust-row__item">
+                  <svg class="trust-row__icon" width="44" height="44" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.35"
+                      d="M12 4l7 4v5c0 4-3 7-7 8-4-1-7-4-7-8V8l7-4z"
+                    />
+                    <path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-5" />
+                  </svg>
+                  <span class="trust-row__text">Guaranteed<br />service support</span>
+                </li>
+                <li class="trust-row__item">
+                  <svg class="trust-row__icon" width="44" height="44" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.35"
+                      stroke-linejoin="round"
+                      d="M12 21.5s5.5-4.8 5.5-10a5.5 5.5 0 00-11 0c0 5.2 5.5 10 5.5 10z"
+                    />
+                    <circle cx="12" cy="11.5" r="2" fill="none" stroke="currentColor" stroke-width="1.35" />
+                  </svg>
+                  <span class="trust-row__text">Local support<br />you can rely on</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="trust-strip-wrap">
+          <div class="trust-strip" role="region" aria-label="Local trust">
+            <div class="trust-strip__half">
+              <svg class="trust-strip__icon trust-strip__icon--somalia" viewBox="0 0 100 100" width="46" height="46" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M6 82 L12 54 L28 32 L48 16 L70 12 L88 22 L94 44 L90 66 L76 82 L56 92 L34 90 L18 80 Z"
+                />
+              </svg>
+              <p class="trust-strip__text">
+                Now installing across <strong>Mogadishu</strong>
+              </p>
+            </div>
+            <div class="trust-strip__rule" aria-hidden="true"></div>
+            <div class="trust-strip__half">
+              <svg class="trust-strip__icon" width="44" height="44" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M12 2 20 6v6c0 5-3.5 9.25-8 10.5C7.5 21.25 4 17 4 12V6l8-4z"
+                />
+                <path
+                  fill="none"
+                  stroke="#ffffff"
+                  stroke-width="1.75"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.2 12.4 10.6 14.8 16.4 9"
+                />
+              </svg>
+              <p class="trust-strip__text">
+                Built for the water challenges in <strong>Somalia</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-problem" id="problem" aria-labelledby="problem-heading">
+        <div class="section-problem__inner">
+          <div class="section-problem__copy">
+            <p class="section-problem__eyebrow">The Problem</p>
+            <h2 id="problem-heading" class="section-problem__title">Clear Water Isn’t Always Safe.</h2>
+            <p class="section-problem__intro">
+              Harmful contaminants, bacteria, heavy metals and excess salts can be present in your water even when it
+              looks clean.
+            </p>
+            <p class="section-problem__emphasis">
+              Unsafe water can affect your family’s health every single day.
+            </p>
+          </div>
+          <div class="section-problem__grid">
+            <article class="problem-card">
+              <div class="problem-card__icon" aria-hidden="true">
+                <img
+                  src="icons/the-problem/the-problem-1.png"
+                  alt=""
+                  width="32"
+                  height="32"
+                  decoding="async"
+                />
+              </div>
+              <h3 class="problem-card__title">Invisible Contaminants</h3>
+              <p class="problem-card__text">Bacteria, viruses and chemicals are invisible to the eye.</p>
+            </article>
+            <article class="problem-card">
+              <div class="problem-card__icon" aria-hidden="true">
+                <img
+                  src="icons/the-problem/the-problem-2.png"
+                  alt=""
+                  width="32"
+                  height="32"
+                  decoding="async"
+                />
+              </div>
+              <h3 class="problem-card__title">Health Risks</h3>
+              <p class="problem-card__text">Contaminated water can cause serious health problems.</p>
+            </article>
+            <article class="problem-card">
+              <div class="problem-card__icon" aria-hidden="true">
+                <img
+                  src="icons/the-problem/the-problem-3.png"
+                  alt=""
+                  width="32"
+                  height="32"
+                  decoding="async"
+                />
+              </div>
+              <h3 class="problem-card__title">Salty &amp; Hard Water</h3>
+              <p class="problem-card__text">Excess salts and minerals make water unhealthy and affect taste.</p>
+            </article>
+            <article class="problem-card">
+              <div class="problem-card__icon" aria-hidden="true">
+                <img
+                  src="icons/the-problem/the-problem-4.png"
+                  alt=""
+                  width="32"
+                  height="32"
+                  decoding="async"
+                />
+              </div>
+              <h3 class="problem-card__title">Unreliable Supply</h3>
+              <p class="problem-card__text">Traditional systems often fail when you need them most.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-solution" id="solution" aria-labelledby="solution-heading">
+        <div class="section-solution__grid">
+          <div class="section-solution__visual">
+            <img
+              class="section-solution__img"
+              src="elevate%20mockup.png"
+              alt="Bluzen Elevate purifier on a kitchen counter"
+              width="1536"
+              height="1024"
+              decoding="async"
+            />
+          </div>
+          <div class="section-solution__content">
+            <p class="section-solution__eyebrow">Our Solution</p>
+            <h2 id="solution-heading" class="section-solution__title">
+              <span class="brand-name">Bluzen</span>. Clean Water,<br />
+              Complete Peace of Mind.
+            </h2>
+            <p class="section-solution__lead">
+              Bluzen systems use advanced purification technology to remove impurities and deliver safe, great-tasting
+              water for your family.
+            </p>
+            <ul class="solution-list">
+              <li class="solution-list__item">
+                <span class="solution-list__check" aria-hidden="true">
+                  <svg width="12" height="10" viewBox="0 0 12 10" fill="none">
+                    <path d="M1 5l3.5 3.5L11 1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                Removes up to 99.9% of impurities
+              </li>
+              <li class="solution-list__item">
+                <span class="solution-list__check" aria-hidden="true">
+                  <svg width="12" height="10" viewBox="0 0 12 10" fill="none">
+                    <path d="M1 5l3.5 3.5L11 1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                Improves taste and odor
+              </li>
+              <li class="solution-list__item">
+                <span class="solution-list__check" aria-hidden="true">
+                  <svg width="12" height="10" viewBox="0 0 12 10" fill="none">
+                    <path d="M1 5l3.5 3.5L11 1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                Reliable performance, day after day
+              </li>
+              <li class="solution-list__item">
+                <span class="solution-list__check" aria-hidden="true">
+                  <svg width="12" height="10" viewBox="0 0 12 10" fill="none">
+                    <path d="M1 5l3.5 3.5L11 1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                Backed by guaranteed service support
+              </li>
+            </ul>
+            <a
+              class="btn btn--wa btn--solution"
+              href="#"
+              data-wa-default
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="btn__wa-icon" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  fill="currentColor"
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                />
+              </svg>
+              <span class="btn__label">Book Installation on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-products" id="products" aria-labelledby="products-heading">
+        <div class="section-products__inner">
+          <h2 id="products-heading" class="section-products__title">Our Products</h2>
+          <div class="product-cards">
+            <article class="product-card">
+              <div class="product-card__body">
+                <span class="product-card__badge">8L Capacity</span>
+                <h3 class="product-card__name">Elevate</h3>
+                <p class="product-card__desc">Perfect for small to medium sized families.</p>
+                <a
+                  class="product-card__link"
+                  href="#"
+                  data-wa-product="Elevate"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Learn More <span class="product-card__arrow" aria-hidden="true">→</span></a>
+              </div>
+              <div class="product-card__media">
+                <img src="hero%20purifier.png" alt="Bluzen Elevate purifier" width="904" height="1024" decoding="async" />
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-card__body">
+                <span class="product-card__badge">12L Capacity</span>
+                <h3 class="product-card__name">Grande</h3>
+                <p class="product-card__desc">Higher capacity for larger families.</p>
+                <a
+                  class="product-card__link"
+                  href="#"
+                  data-wa-product="Grande"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Learn More <span class="product-card__arrow" aria-hidden="true">→</span></a>
+              </div>
+              <div class="product-card__media">
+                <img src="hero%20purifier.png" alt="Bluzen Grande purifier" width="904" height="1024" decoding="async" />
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-card__body">
+                <span class="product-card__badge">Under Sink</span>
+                <h3 class="product-card__name">Mystic</h3>
+                <p class="product-card__desc">Compact and hidden under your sink.</p>
+                <a
+                  class="product-card__link"
+                  href="#"
+                  data-wa-product="Mystic"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Learn More <span class="product-card__arrow" aria-hidden="true">→</span></a>
+              </div>
+              <div class="product-card__media">
+                <img src="hero%20purifier.png" alt="Bluzen Mystic purifier" width="904" height="1024" decoding="async" />
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-why-families" id="why-families" aria-labelledby="why-families-heading">
+        <div class="section-why-families__inner">
+          <h2 id="why-families-heading" class="section-why-families__title">
+            Why Families Choose <span class="section-why-families__brand">Bluzen</span>
+          </h2>
+          <div class="why-families-grid">
+            <div class="why-card">
+              <div class="why-card__logo">
+                <img src="icons/shield.png" alt="" width="56" height="56" decoding="async" />
+              </div>
+              <div class="why-card__copy">
+                <h3 class="why-card__title">Trusted Quality</h3>
+                <p class="why-card__text">Built with high-quality components for long-lasting performance.</p>
+              </div>
+            </div>
+            <div class="why-card">
+              <div class="why-card__logo">
+                <img src="icons/rating.png" alt="" width="56" height="56" decoding="async" />
+              </div>
+              <div class="why-card__copy">
+                <h3 class="why-card__title">Expert Installation</h3>
+                <p class="why-card__text">Professional installation by trained and experienced technicians.</p>
+              </div>
+            </div>
+            <div class="why-card">
+              <div class="why-card__logo">
+                <img src="icons/headset.png" alt="" width="56" height="56" decoding="async" />
+              </div>
+              <div class="why-card__copy">
+                <h3 class="why-card__title">Guaranteed Service</h3>
+                <p class="why-card__text">We are here when you need us. No-downtime, no worries.</p>
+              </div>
+            </div>
+            <div class="why-card">
+              <div class="why-card__logo">
+                <img src="icons/handshake.png" alt="" width="56" height="56" decoding="async" />
+              </div>
+              <div class="why-card__copy">
+                <h3 class="why-card__title">Family Focused</h3>
+                <p class="why-card__text">We care about your family's health and your peace of mind.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-hiw" id="how-it-works" aria-labelledby="hiw-heading">
+        <div class="section-hiw__inner">
+          <h2 id="hiw-heading" class="section-hiw__title">How It Works</h2>
+          <div class="hiw-track">
+            <div class="hiw-step">
+              <div class="hiw-step__icon" aria-hidden="true">
+                <img
+                  src="icons/how-it-works/how-it-works-1.png"
+                  alt=""
+                  width="64"
+                  height="64"
+                  decoding="async"
+                />
+              </div>
+              <h3 class="hiw-step__title">1. Book on WhatsApp</h3>
+              <p class="hiw-step__text">Contact us in seconds and choose a convenient time.</p>
+            </div>
+            <div class="hiw-connector" aria-hidden="true"></div>
+            <div class="hiw-step">
+              <div class="hiw-step__icon" aria-hidden="true">
+                <img
+                  src="icons/how-it-works/how-it-works-2.png"
+                  alt=""
+                  width="64"
+                  height="64"
+                  decoding="async"
+                />
+              </div>
+              <h3 class="hiw-step__title">2. Home Visit &amp; Water Test</h3>
+              <p class="hiw-step__text">Our technician visits your home and tests your water.</p>
+            </div>
+            <div class="hiw-connector" aria-hidden="true"></div>
+            <div class="hiw-step">
+              <div class="hiw-step__icon" aria-hidden="true">
+                <img
+                  src="icons/how-it-works/how-it-works-3.png"
+                  alt=""
+                  width="64"
+                  height="64"
+                  decoding="async"
+                />
+              </div>
+              <h3 class="hiw-step__title">3. Installation</h3>
+              <p class="hiw-step__text">We install your <span class="brand-name">Bluzen</span> system the same day.</p>
+            </div>
+            <div class="hiw-connector" aria-hidden="true"></div>
+            <div class="hiw-step">
+              <div class="hiw-step__icon" aria-hidden="true">
+                <img
+                  src="icons/how-it-works/how-it-works-4.png"
+                  alt=""
+                  width="64"
+                  height="64"
+                  decoding="async"
+                />
+              </div>
+              <h3 class="hiw-step__title">4. Service Support</h3>
+              <p class="hiw-step__text">We provide ongoing support whenever you need us.</p>
+            </div>
+          </div>
+          <div class="section-hiw__cta">
+            <a class="btn btn--wa btn--hiw" href="#" data-wa-default target="_blank" rel="noopener noreferrer">
+              <svg class="btn__wa-icon" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                />
+              </svg>
+              <span class="btn__label">Book Installation on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+        <div class="section-testimonials__inner">
+          <h2 id="testimonials-heading" class="section-testimonials__title">What Our Customers Say</h2>
+          <div class="testimonial-grid">
+            <article class="testimonial-card">
+              <div class="testimonial-card__inner">
+                <div class="testimonial-card__main">
+                  <div class="testimonial-card__stars" aria-hidden="true">★★★★★</div>
+                  <blockquote class="testimonial-card__quote">
+                    <p>
+                      “The technician explained everything clearly and tested our water. The difference is clear — my
+                      children are healthier now.”
+                    </p>
+                  </blockquote>
+                  <footer class="testimonial-card__meta">
+                    <cite class="testimonial-card__cite">— Amina Mohamed</cite>
+                    <p class="testimonial-card__location">Karan District</p>
+                  </footer>
+                </div>
+                <figure class="testimonial-card__photo">
+                  <img
+                    src="review.png"
+                    alt="Portrait of Amina Mohamed"
+                    width="640"
+                    height="800"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              </div>
+            </article>
+            <article class="testimonial-card">
+              <div class="testimonial-card__inner">
+                <div class="testimonial-card__main">
+                  <div class="testimonial-card__stars" aria-hidden="true">★★★★★</div>
+                  <blockquote class="testimonial-card__quote">
+                    <p>“Very professional team. Installation was quick and neat. The water tastes much better.”</p>
+                  </blockquote>
+                  <footer class="testimonial-card__meta">
+                    <cite class="testimonial-card__cite">— Ahmed Hassan</cite>
+                    <p class="testimonial-card__location">Hodan District</p>
+                  </footer>
+                </div>
+                <figure class="testimonial-card__photo">
+                  <img
+                    src="review.png"
+                    alt="Portrait of Ahmed Hassan"
+                    width="640"
+                    height="800"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              </div>
+            </article>
+            <article class="testimonial-card">
+              <div class="testimonial-card__inner">
+                <div class="testimonial-card__main">
+                  <div class="testimonial-card__stars" aria-hidden="true">★★★★★</div>
+                  <blockquote class="testimonial-card__quote">
+                    <p>
+                      “They respond quickly whenever we need support. Highly recommend <span class="brand-name">Bluzen</span>
+                      for every home.”
+                    </p>
+                  </blockquote>
+                  <footer class="testimonial-card__meta">
+                    <cite class="testimonial-card__cite">— Farah Ali</cite>
+                    <p class="testimonial-card__location">Wadajir</p>
+                  </footer>
+                </div>
+                <figure class="testimonial-card__photo">
+                  <img
+                    src="review.png"
+                    alt="Portrait of Farah Ali"
+                    width="640"
+                    height="800"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              </div>
+            </article>
+          </div>
+          <div class="testimonial-dots" aria-hidden="true">
+            <span class="testimonial-dots__dot is-active"></span>
+            <span class="testimonial-dots__dot"></span>
+            <span class="testimonial-dots__dot"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-cta-banner" aria-labelledby="cta-banner-heading">
+        <div class="section-cta-banner__bg" aria-hidden="true"></div>
+        <div class="section-cta-banner__inner">
+          <div class="section-cta-banner__copy">
+            <h2 id="cta-banner-heading" class="section-cta-banner__title">Get clean, safe drinking water for your home today.</h2>
+            <p class="section-cta-banner__sub">Book your <span class="brand-name">Bluzen</span> installation now.</p>
+          </div>
+          <div class="section-cta-banner__action">
+            <a class="btn btn--cta-light" href="#" data-wa-default target="_blank" rel="noopener noreferrer">
+              <svg class="btn__wa-icon" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                />
+              </svg>
+              <span class="btn__label">Book on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__col site-footer__col--brand" id="about">
+          <a class="site-footer__brand" href="#home">
+            <img
+              class="site-footer__logo"
+              src="Logo%20preview%20DARK%20NEW.%201jpg%20copy.jpg"
+              alt=""
+              width="40"
+              height="40"
+              decoding="async"
+            />
+            <span class="site-footer__brand-text">BLUZEN</span>
+          </a>
+          <p class="site-footer__tagline">Clean water. Healthy family. Reliable service. Every time.</p>
+          <div class="site-footer__social">
+            <a class="site-footer__social-link" href="#" aria-label="Facebook" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H7v3h3v8h3v-8h2.5l.5-3H13v-2c0-.6.4-1 1-1z"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a class="site-footer__social-link" href="#" aria-label="Instagram" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="4" y="4" width="16" height="16" rx="4" stroke="currentColor" stroke-width="1.2" />
+                <circle cx="12" cy="12" r="3.5" stroke="currentColor" stroke-width="1.2" />
+                <circle cx="17" cy="7" r="1" fill="currentColor" />
+              </svg>
+            </a>
+            <a
+              class="site-footer__social-link"
+              href="https://wa.me/252613558822"
+              aria-label="WhatsApp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="site-footer__col">
+          <h3 class="site-footer__heading">Quick Links</h3>
+          <ul class="site-footer__list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__col">
+          <h3 class="site-footer__heading">Products</h3>
+          <ul class="site-footer__list">
+            <li><a href="#products">Elevate (8L)</a></li>
+            <li><a href="#products">Grande (12L)</a></li>
+            <li><a href="#products">Mystic (Under Sink)</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__col site-footer__col--contact" id="contact">
+          <h3 class="site-footer__heading">Contact Us</h3>
+          <ul class="site-footer__contact-list">
+            <li>
+              <span class="site-footer__contact-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M6.6 4h3.6l1.2 4.2-2.2 1.4a12 12 0 006.4 6.4l1.4-2.2L21 14.8V18.4A2.6 2.6 0 0118.8 21C10 21 3 14 3 5.2A2.6 2.6 0 015.6 3z"
+                    stroke="currentColor"
+                    stroke-width="1.25"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <a href="tel:+252613558822">+252&nbsp;613&nbsp;558&nbsp;822</a>
+            </li>
+            <li>
+              <span class="site-footer__contact-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+              </span>
+              <a href="https://wa.me/252613558822" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            </li>
+            <li>
+              <span class="site-footer__contact-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M12 21s6-4.5 6-9a4 4 0 00-8 0c0 4.5 6 9 6 9z"
+                    stroke="currentColor"
+                    stroke-width="1.25"
+                    stroke-linejoin="round"
+                  />
+                  <circle cx="12" cy="12" r="1.8" stroke="currentColor" stroke-width="1.25" />
+                </svg>
+              </span>
+              <span>Mogadishu, Somalia</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="site-footer__legal">© 2026 <span class="brand-name">Bluzen</span>. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
