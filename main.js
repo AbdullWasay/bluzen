@@ -1,8 +1,10 @@
 (function () {
   var DEFAULT_MSG = "Hi Bluzen, I'd like to book a home water test.";
+  var ENTERPRISE_MSG =
+    "Hi Bluzen, I'm interested in the Enterprise system and would like to get a quote.";
 
   function waUrl(text) {
-    return "https://wa.me/252613558822?text=" + encodeURIComponent(text);
+    return "https://wa.me/+252613558822?text=" + encodeURIComponent(text);
   }
 
   document.querySelectorAll("[data-wa-default]").forEach(function (el) {
@@ -13,6 +15,10 @@
     "Hi Bluzen, I'm interested in the MODEL and would like to book a home water test.";
   document.querySelectorAll("[data-wa-product]").forEach(function (el) {
     var model = el.getAttribute("data-wa-product") || "";
+    if (model.toLowerCase() === "enterprise") {
+      el.setAttribute("href", waUrl(ENTERPRISE_MSG));
+      return;
+    }
     el.setAttribute("href", waUrl(productTemplate.replace("MODEL", model)));
   });
 
