@@ -74,4 +74,31 @@
     syncHeaderSolid();
     window.addEventListener("scroll", syncHeaderSolid, { passive: true });
   }
+
+  var problemOverview = document.querySelector(".section-problem__overview");
+  var problemAside = document.querySelector(".section-problem__aside");
+  if (problemOverview && problemAside) {
+    var problemDesktopMq = window.matchMedia("(min-width: 961px)");
+    function syncProblemAsideHeight() {
+      if (!problemDesktopMq.matches) {
+        problemAside.style.height = "";
+        return;
+      }
+      problemAside.style.height = problemOverview.getBoundingClientRect().height + "px";
+    }
+    syncProblemAsideHeight();
+    window.addEventListener("resize", syncProblemAsideHeight, { passive: true });
+    if (problemDesktopMq.addEventListener) {
+      problemDesktopMq.addEventListener("change", syncProblemAsideHeight);
+    } else if (problemDesktopMq.addListener) {
+      problemDesktopMq.addListener(syncProblemAsideHeight);
+    }
+    if (window.ResizeObserver) {
+      new ResizeObserver(syncProblemAsideHeight).observe(problemOverview);
+    }
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(syncProblemAsideHeight);
+    }
+    window.addEventListener("load", syncProblemAsideHeight);
+  }
 })();
